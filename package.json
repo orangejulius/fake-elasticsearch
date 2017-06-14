@@ -4,6 +4,7 @@
   "description": "An Express app to provide a fake Elasticsearch service",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.14.0"
   },
   "devDependencies": {},
