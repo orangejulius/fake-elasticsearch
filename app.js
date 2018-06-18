@@ -8,6 +8,10 @@ app.get('/', function (req, res) {
 
 app.use(bodyParser.raw({ type: '*/*', limit: '10MB'}));
 
+app.get('/*', function (req, res) {
+    res.send('Hello World!')
+})
+
 app.post('/_bulk', function(req, res) {
   res.setHeader('Content-Type', 'application/json');
   const body = req.body.toString();
